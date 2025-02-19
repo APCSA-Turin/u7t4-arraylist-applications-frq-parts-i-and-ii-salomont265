@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.TestWordScramble" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-07T16:13:21" hostname="codespaces-cc8cd4" time="0.061">
+<testsuite name="com.example.project.TestWordScramble" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-19T17:48:53" hostname="codespaces-b9e5b6" time="0.071">
   <properties/>
-  <testcase name="testScrambleWordPARTA()" classname="com.example.project.TestWordScramble" time="0.038"/>
-  <testcase name="testScrambleOrRemovePARTB()" classname="com.example.project.TestWordScramble" time="0.001"/>
-  <system-out><![CDATA[--------- TEST scrambleOrRemove (part b) ---------
+  <testcase name="testScrambleWordPARTA()" classname="com.example.project.TestWordScramble" time="0.059"/>
+  <testcase name="testScrambleOrRemovePARTB()" classname="com.example.project.TestWordScramble" time="0.01"/>
+  <system-out><![CDATA[0
+hey
+0
+TNA
+0
+hi
+0
+BARACADABRA
+1
+2
+hey
+2
+BARCAADABRA
+4
+hey
+4
+BARCADAABRA
+6
+hey
+6
+BARCADABARA
+8
+0
+1
+0
+hey
+0
+ARADVARK
+2
+3
+4
+hey
+4
+ARADVRAK
+0
+hey
+0
+TNA
+0
+hey
+0
+TNA
+0
+hi
+0
+BARACADABRA
+1
+2
+hey
+2
+BARCAADABRA
+4
+hey
+4
+BARCADAABRA
+6
+hey
+6
+BARCADABARA
+8
+0
+hi
+0
+BARACADABRA
+1
+2
+hey
+2
+BARCAADABRA
+4
+hey
+4
+BARCADAABRA
+6
+hey
+6
+BARCADABARA
+8
+0
+1
+0
+hi
+0
+PAPLE
+1
+2
+0
+hi
+0
+PAPLE
+1
+2
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

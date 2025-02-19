@@ -14,7 +14,42 @@ public class WordScramble {
    */
   public static String scrambleWord(String word) {
       /* to be implemented in part (a) */
-      return "";
+      if(word.indexOf("A") != -1){
+    
+      int last = -1;
+      for(int i=0;i<word.length()-2;i++){
+        System.out.println(i);
+        if((word.substring(i,i+1).equals("A")) && (word.substring(i+1,i+2).equals("A")) &&(!word.substring(i+2,i+3).equals("A"))){
+          System.out.println("hey");
+        System.out.println(i);
+
+        word = word.substring(0,i+1) + word.substring(i+2,i+3) + word.substring(i+1,i+2) + word.substring(i+3);
+        System.out.println(word);
+        last = i+2;
+        i+=1;
+        }
+        else if((word.substring(i,i+1).equals("A"))  &&(!word.substring(i+2,i+3).equals("A")) && ( i != last) ){
+          System.out.println("hi");
+          System.out.println(i);
+          word = word.substring(0,i) + word.substring(i+1,i+2) + word.substring(i,i+1) + word.substring(i+2);
+          last = i+1;
+          System.out.println(word);
+
+      }
+      else if((word.substring(i+1,i+2).equals("A"))  &&(!word.substring(i+2,i+3).equals("A")) ){
+        System.out.println("hey");
+        System.out.println(i);
+
+        word = word.substring(0,i+1) + word.substring(i+2,i+3) + word.substring(i+1,i+2) + word.substring(i+3);
+        System.out.println(word);
+        last =i+2;
+        i+=1;
+
+    }
+      
+    }
+  }
+      return word;
   }
 
   /** Modifies wordList by replacing each word with its scrambled
@@ -31,6 +66,15 @@ public class WordScramble {
    */
   public static ArrayList<String> scrambleOrRemove(ArrayList<String> wordList) {
       /* to be implemented in part (b) */
-      return new ArrayList<String>();
+      for(int i=0;i<wordList.size();i++){
+        if(wordList.get(i).equals(scrambleWord(wordList.get(i)))){
+          wordList.remove(i);
+          i--;
+        }else{
+          wordList.set(i, scrambleWord(wordList.get(i)));
+        }
+      }
+      
+      return wordList;
   }
 }
